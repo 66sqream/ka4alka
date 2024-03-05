@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <style> 
+         .popupBg.active {
+                opacity: 1;
+                pointer-events: all;
+                transition: 0.5s all;
+            }
+            
+            .signUpBg.active {
+                opacity: 1;
+                pointer-events: all;
+                transition: 0.5s all;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="popupBg">
+        <div class="popup">
+            <form method="post" action="#" class="logIn">
+                <div class="data">
+                    <div class="name">
+                        <p>Эл.почта</p>
+                        <input type="email" class="log" >
+                    </div>
+                    <div class="name">
+                        <p>Пароль</p>
+                        <input type="password" >
+                    </div>
+                    
+                    <!-- <label>
+                        <input type="checkbox" name="Чужой компьютер">
+                        Чужой компьютер
+                    </label> -->
+                </div>
+                <div class="buttons">
+                    <button class="butlogIn" type="submit">Войти</button>
+                    <div class="social">
+                        <p>Войти через:</p>
+                        <div class="img">
+                            <img src="./img/vk2.svg" alt="">
+                            <img src="./img/google.svg" alt="">
+                        </div>
+                       
+                    </div>
+                    
+                    <p class="butSignUp ">Быстрая регистрация</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="signUpBg ">
+        <div class="signUpPop ">
+            <form method="post " action="# " class="SignUp ">
+                <div class="data">
+                    <div class="name">
+                        <p>Эл.почта</p>
+                        <input type="email " class="log">
+                    </div>
+                    <div class="name">
+                        <p>Пароль</p>
+                        <input  type="password">
+                    </div>
+                    <div class="name">
+                        <p>Подтвердите пароль</p>
+                        <input type="password">
+                    </div>
+                    
+                    
+                   
+                </div>
+                <div class="buttons ">
+                    <button class="butSignUp">Зарегестрироваться</button>
+                    <div class="social">
+                        <p>Войти через:</p>
+                        <div class="img">
+                            <img src="./img/vk2.svg" alt="">
+                            <img src="./img/google.svg" alt="">
+                        </div>
+                       
+                    </div>
+                    <p class="butLogIn">Войти</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="fitnes">
+        <header>
+            <p class="num">+7 (777)-777 77 77</p>
+            <p>FITNESS.TLT</p>
+            <p class="hov-green">Личный кабинет</p>
+        </header>
+
+        <div class="buttons">
+            <button class="green">
+                Тольятти
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.1571 13.6935L16.3638 7.659L18 9.24975L9 18L0 9.24975L1.63615 7.659L7.84289 13.6935V0H10.1571V13.6935Z" fill="black"/>
+                    </svg>
+                    
+            </button>
+            <button class="green">
+                Акции
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3271 5.8448C15.6006 5.53927 15.9356 5.29487 16.31 5.12754C16.6844 4.96022 17.0899 4.87373 17.5 4.87373C17.9101 4.87373 18.3156 4.96022 18.69 5.12754C19.0644 5.29487 19.3993 5.53927 19.6729 5.8448L20.6937 6.98521C20.9855 7.31114 21.3468 7.56728 21.751 7.73464C22.1551 7.90201 22.5918 7.97633 23.0285 7.95209L24.5598 7.8675C24.9694 7.84493 25.3791 7.90899 25.7622 8.05552C26.1453 8.20204 26.4932 8.42773 26.7832 8.71784C27.0732 9.00796 27.2987 9.35598 27.4451 9.73917C27.5914 10.1224 27.6553 10.5321 27.6325 10.9417L27.5479 12.4715C27.5239 12.908 27.5983 13.3443 27.7657 13.7482C27.933 14.1521 28.1891 14.5132 28.5148 14.8048L29.6552 15.8256C29.961 16.0992 30.2056 16.4342 30.373 16.8088C30.5405 17.1833 30.6271 17.589 30.6271 17.9993C30.6271 18.4096 30.5405 18.8152 30.373 19.1898C30.2056 19.5643 29.961 19.8993 29.6552 20.1729L28.5148 21.1938C28.1889 21.4855 27.9327 21.8468 27.7654 22.251C27.598 22.6552 27.5237 23.0918 27.5479 23.5285L27.6325 25.0598C27.6551 25.4694 27.591 25.8791 27.4445 26.2622C27.298 26.6453 27.0723 26.9932 26.7822 27.2832C26.492 27.5732 26.144 27.7987 25.7608 27.9451C25.3776 28.0914 24.9679 28.1553 24.5583 28.1325L23.0285 28.0479C22.592 28.0239 22.1557 28.0983 21.7518 28.2657C21.3479 28.433 20.9868 28.6891 20.6952 29.0148L19.6744 30.1552C19.4008 30.461 19.0658 30.7056 18.6912 30.8731C18.3167 31.0405 17.911 31.1271 17.5007 31.1271C17.0904 31.1271 16.6848 31.0405 16.3102 30.8731C15.9357 30.7056 15.6007 30.461 15.3271 30.1552L14.3062 29.0148C14.0145 28.6889 13.6532 28.4327 13.249 28.2654C12.8448 28.098 12.4082 28.0237 11.9715 28.0479L10.4402 28.1325C10.0306 28.1551 9.62092 28.091 9.23779 27.9445C8.85467 27.798 8.50676 27.5723 8.21678 27.2822C7.9268 26.992 7.70128 26.644 7.55494 26.2608C7.40859 25.8776 7.34472 25.4679 7.36749 25.0583L7.45208 23.5285C7.47609 23.092 7.40167 22.6557 7.23431 22.2518C7.06695 21.8479 6.81094 21.4868 6.4852 21.1952L5.34479 20.1744C5.03902 19.9008 4.79441 19.5658 4.62694 19.1912C4.45947 18.8167 4.37291 18.411 4.37291 18.0007C4.37291 17.5904 4.45947 17.1848 4.62694 16.8102C4.79441 16.4357 5.03902 16.1007 5.34479 15.8271L6.4852 14.8063C6.81113 14.5145 7.06727 14.1532 7.23463 13.749C7.402 13.3449 7.47632 12.9082 7.45208 12.4715L7.36749 10.9402C7.34513 10.5308 7.40935 10.1212 7.55597 9.73826C7.70259 9.35531 7.92831 9.00758 8.2184 8.71776C8.5085 8.42795 8.85644 8.20255 9.23953 8.0563C9.62261 7.91004 10.0322 7.84621 10.4417 7.86896L11.9715 7.95355C12.408 7.97756 12.8443 7.90314 13.2482 7.73578C13.6521 7.56842 14.0132 7.3124 14.3048 6.98667L15.3256 5.84625L15.3271 5.8448Z" stroke="black" stroke-width="1.5"/>
+                    <path d="M13.8542 14.3542H13.8687V14.3688H13.8542V14.3542ZM21.1458 21.6458H21.1604V21.6604H21.1458V21.6458Z" stroke="black" stroke-width="2.25" stroke-linejoin="round"/>
+                    <path d="M21.875 13.625L13.125 22.375" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                                     
+            </button>
+            <button class="green">
+                Клубы
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_41_12)">
+                    <path d="M15.0003 0C10.095 0 6.07501 4.008 6.07501 8.8998C6.07501 10.7952 6.68041 12.5568 7.70491 14.0046L13.911 24.7335C14.7801 25.869 15.3579 25.6533 16.0806 24.6735L22.926 13.0245C23.064 12.7743 23.1726 12.5079 23.2671 12.2358C23.7015 11.1772 23.9249 10.044 23.9247 8.8998C23.925 4.008 19.9062 0 15.0003 0ZM15.0003 4.17C17.6421 4.17 19.7427 6.2658 19.7427 8.8998C19.7427 11.5338 17.6421 13.6287 15.0003 13.6287C12.3588 13.6287 10.2573 11.5341 10.2573 8.8998C10.2573 6.2658 12.3588 4.1703 15.0003 4.1703V4.17Z" fill="#545454"/>
+                    <path d="M20.6739 14.6724L20.6595 14.7102C20.664 14.6988 20.6676 14.6871 20.6721 14.6757L20.6739 14.6724ZM19.1544 22.0062L18.7395 22.5192C19.3005 22.587 19.8435 22.6665 20.352 22.7628L18.7083 23.2497L20.9022 23.8332L22.5375 23.3175C23.5419 23.6544 24.9327 24.0663 25.3935 24.5346H22.1145L22.4403 25.4874H25.8429C25.8327 26.0244 24.8727 26.4606 23.9559 26.814L21.6306 26.3112L19.4397 27.0963L21.7797 27.6303C20.4135 28.0023 18.1197 28.2285 16.2207 28.3326L16.1409 27.2406H13.8591L13.779 28.3326C11.88 28.2285 9.5865 28.0026 8.22 27.6306L10.5603 27.0963L8.3694 26.3112L6.0438 26.814C5.1402 26.5395 4.1673 26.0244 4.1571 25.4874H7.56L7.8858 24.5346H4.6068C5.0676 24.0663 6.4584 23.6544 7.4628 23.3175L9.0981 23.8332L11.292 23.2497L9.6483 22.7628C10.1791 22.6647 10.713 22.5839 11.2491 22.5207L10.8402 22.0068C6.4047 22.4679 2.7183 23.4498 1.7517 25.0005C0.210003 27.4719 5.8974 29.958 14.811 29.9967C14.9436 30.0033 15.0744 29.9985 15.198 29.9967C24.1065 29.9559 29.7888 27.4707 28.2483 25.0005C27.2811 23.4492 23.5926 22.467 19.1544 22.0062Z" fill="#545454"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_41_12">
+                    <rect width="30" height="30" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                            
+            </button>
+            <button class="green">
+                Тренеры
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.625 13.125H21.875V32.0833H18.9583V23.3333H16.0417V32.0833H13.125V13.125H4.375V10.2083H30.625M17.5 2.91667C18.2735 2.91667 19.0154 3.22396 19.5624 3.77094C20.1094 4.31792 20.4167 5.05979 20.4167 5.83334C20.4167 6.60689 20.1094 7.34875 19.5624 7.89573C19.0154 8.44271 18.2735 8.75 17.5 8.75C16.7265 8.75 15.9846 8.44271 15.4376 7.89573C14.8906 7.34875 14.5833 6.60689 14.5833 5.83334C14.5833 4.21459 15.8813 2.91667 17.5 2.91667Z" fill="black"/>
+                    </svg>
+                                     
+            </button>
+            <button class="green">Рассписание</button>
+            <button class="red">Купить сейчас</button>
+        </div>
+        <div class="row-foto-fitnes">
+            <div class="column-left">
+                <h1>ФОТО КЛУБА</h1>
+                <div class="row-img ">
+                    <div class="column-img ">
+                        <img class="img" src="./img/image 1.png " alt=" ">
+                        <img src="./img/image 3.png " alt=" ">
+                    </div>
+                    <div class="column-img ">
+                        <img src="./img/image 2.png " alt=" ">
+                        <img src="./img/image 4.png" alt=" ">
+                    </div>
+                </div>
+            </div>
+            <div class="column-right ">
+                <h1>FITNES.TLT-ЭТО </h1>
+                <div class="infa-column ">
+                    <div class="item-1">
+                        <div class="img-text-row ">
+                            <h2>30+</h2>
+                            <img src="./img/gis_position.svg" alt=" ">
+                        </div>
+                        <p>Городов в России</p>
+                    </div>
+                    <div class="item-2">
+                        <div class="img-text-row ">
+                            <h2>71</h2>
+                            <img src="./img/pepicons-pencil_people.svg " alt=" ">
+                        </div>
+                        <p>Клуб федеральной сети</p>
+                    </div>
+                    <div class="item-3">
+                        <div class="img-text-row ">
+                            <h2>25+</h2>
+                            <img src="./img/material-symbols_ecg-heart.svg" alt=" ">
+                        </div>
+                        <p>Групповых направлений</p>
+                    </div>
+                    <div class="item-4">
+                        <div class="img-text-row ">
+                            <h2>7</h2>
+                            <img src="./img/icon-park_dumbbell.svg" alt=" ">
+                        </div>
+                        <p>Премиум-класса</p>
+                    </div>
+                </div>
+                <div class="order ">
+                    <h2>Заказать обратный звонок по стоиммости абонимента</h2>
+                    <div class="row-input ">
+                        <form>
+                            <input class="name" type="text" placeholder="Введите имя">
+                        </form>
+                        <form>
+                            <input type="number" placeholder="Введите номер телефона">
+                        </form> 
+                    </div>
+                    <div class="row-input ">
+                        <form>
+                            <input type="text" placeholder="Выберите клуб">
+                        </form>
+                        <form >       
+                            <button>Заказать</button>
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="schedule">
+            <h1>График работы</h1>
+            <div class="blocks">
+                <div class="block">
+                    <h3>Бассейн</h3>
+                    <p>Будни: 13:00-20:00</p>
+                    <p>Выходные:10:00-17:00</p>
+                </div>
+                <div class="block">
+                    <h3>Сауна</h3>
+                    <p>Будни: 11:00-18:00</p>
+                    <p>Выходные:14:00-22:00 </p>
+                </div>
+                <div class="block">
+                    <h3>Тренажерный зал</h3>
+                    <p>Будни: 10:00-20:00</p>
+                    <p>Выходные: 10:00-20:00</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row-footer">
+                <div class="number-logo">
+                    <p>FITNESS.TLT</p>
+                    <p>+7 (777)-777 77 77</p>
+                </div>
+                <div class="list">
+                    <a href="">Вакансии</a>
+                    <a href="">Новости клубов</a>
+                    <a href="">Реклама в клубах</a>
+                </div>
+                <div class="help">
+                    <p>Служба поддержки</p>
+                    <p>с 8:00 до 00:00</p>
+                    <p>Email:help.fktlt@.com</p>
+                </div>
+            </div>
+            <div class="line-footer"></div>
+            <div class="row-two">
+                <div class="img">
+                    <img src="./img/vk.svg" alt="">
+                    <img src="./img/x.svg" alt="">
+                    <img src="./img/u.svg" alt="">
+                    <img src="./img/tg.svg" alt="">
+                    <img src="./img/inst.svg" alt="">
+                </div>
+                <p>Юридическая информация</p>
+                <p>Соглшаение на обработку персональных данных</p>
+            </div>
+        </footer>
+    </div>
+   
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
+
+</html>
